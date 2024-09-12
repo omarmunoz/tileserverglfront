@@ -1,0 +1,63 @@
+
+node_modules
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.perl-version
+local/
+
+
+# Local migration files from diff tool
+*.log
+*.bak
+scripts/functions_update.sql
+scripts/current_functions.sql
+scripts/sinarcan_new_*
+scripts/update.sql
+scripts/update-reverse.sql
+pg-diff-config.json
+
+
+# Environment files used by Constants.pm:
+site/cgi/.dev
+site/cgi/.test
+site/cgi/.beta
+
+
+# Environment and config files created by install
+envvars
+conf/devel/apache2/conf.d/*.conf
+conf/devel/postgresql/*.conf
+
+
+# Sensitive files:
+conf/certificado*/
+
+
+# Devel test files
+site/**/test*.pl
+
+
+# Document directories
+site/*documentos*/*
+!site/**/.placeholder
+
+
+# sublime-text
+*.sublime*
+
+# vscode
+.vscode/
+*.code-workspace
+.file-ops
+.vstags
+sql/**/*.session.sql
+sql/sessions/*.sql
+
+.shellcheckrc
